@@ -281,7 +281,7 @@ if __name__ == "__main__":
 
                 if dem <=7:
                     dem+=1
-                    image1 = Image.open('C:/Users/Admin/PycharmProjects/pythonProject27/Resources/bienbao.png')
+                    image1 = Image.open('bienbao.png')
                     # resize the image to a 224x224 with the same strategy as in TM2:
                     # resizing the image to be at least 224x224 and then cropping from the center
                     size = (224, 224)
