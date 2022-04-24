@@ -26,7 +26,7 @@ w=0
 dem=0
 check=False
 uncheck=False
-model = load_model('keras_model.h5')
+model = load_model('/root/bainop/keras_model.h5')
 data1 = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
 #
 end=0
@@ -301,8 +301,8 @@ if __name__ == "__main__":
                     if abs(w-h)<=5:
                         print(h)
                         try:
-                            cv2.imwrite('bienbao.png', k[y:y + h, x:x + w, :])
-                            image1 = Image.open('bienbao.png')
+                            cv2.imwrite('/root/bainop/bienbao.png', k[y:y + h, x:x + w, :])
+                            image1 = Image.open('/root/bainop/bienbao.png')
                             # resize the image to a 224x224 with the same strategy as in TM2:
                             # resizing the image to be at least 224x224 and then cropping from the center
                             size = (224, 224)
